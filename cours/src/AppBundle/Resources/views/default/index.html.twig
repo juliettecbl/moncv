@@ -1,0 +1,213 @@
+{% extends "base.html.twig" %}
+{% block body %}
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">CV Juliette Cabal</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./template/img/chelou4.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#accueil">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#experience">Expérience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#formation">Formation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#competences">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#loisirs">Loisirs</a></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="accueil">
+        <div class="my-auto">
+          <h1 class="mb-0">Cabal
+            <span class="text-primary">Juliette</span>
+          </h1>
+          <div class="subheading mb-5">359 route de Freydieres, les Roussets, 38420 Revel
+            <a href="mailto:name@email.com">juliette_cabal@hotmail.fr</a>
+          </div>
+          <p class="mb-5">A la recherche d'une alternace dans le domaine du graphisme. Je me considere comme une jeune fille dynamique et créative, disponible et à l'écoute des critiques. Je suis impliquée dans la vie active de mon IUT en étant vice présidente du BDE MMI, mais aussi bénévole dans une association de musique/évènementielle Grenobloise.</p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Expérience</h2>
+          
+           {% for exp in experiences %}
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+               <a href="{{ path('edit_experience', {'id': exp.getId() } )}}">Modifier</a>
+              - <a href="{{ path('remove_experience', {'id': exp.getId() } )}}">Supprimer</a>
+              - <a href="{{ path('create_experience', {'id': exp.getId() } )}}">Ajouter</a>
+              <h3 class="mb-0">{{exp.getName()}}</h3>
+              <div class="subheading mb-3">{{exp.getLieu()}}</div>
+              <p>{{exp.getDesc()}}</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">{{exp.getDateDebut()|date("m/Y")}} - {{exp.getDateFin()|date("m/Y")}}</span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="formation">
+        <div class="my-auto">
+          <h2 class="mb-5">Formation</h2>
+
+              {% for formation in formations %}
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+               <a href="{{ path('edit_formation', {'id': formation.getId() } )}}">Modifier</a>
+              - <a href="{{ path('remove_formation', {'id': formation.getId() } )}}">Supprimer</a>
+              - <a href="{{ path('create_formation', {'id': formation.getId() } )}}">Ajouter</a>
+              <h3 class="mb-0">{{formation.getLieu()}}</h3>
+              <div class="subheading mb-3">{{formation.getName()}}</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">{{formation.getDateDebut()|date("m/Y")}} - {{formation.getDateFin()|date("m/Y")}}</span>
+            </div>
+          </div>
+              {% endfor %}
+
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="competences">
+        <div class="my-auto">
+          <h2 class="mb-5">Compétences</h2>
+          
+          <div class="subheading mb-3">Langage de programmation</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-wordpress"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Design</div>
+          {% for competences in competences %}
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              {{competences.getName()}}
+              <div class="d-flex justify-content-end">
+              <a href="{{ path('edit_competences', {'id': competences.getId() } )}}">Modifier</a>
+              - <a href="{{ path('remove_competences', {'id': competences.getId() } )}}">Supprimer</a>
+              - <a href="{{ path('create_competences', {'id': competences.getId() } )}}">Ajouter</a>
+              </div>
+              </li>
+            <li>
+          </ul>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="loisirs">
+        <div class="my-auto">
+          <h2 class="mb-5">Loisirs</h2>
+          {% for loisirs in loisirs %}
+          <p>{{loisirs.getName()}}
+          <div class="d-flex justify-content-end">
+          <a href="{{ path('edit_loisirs', {'id': loisirs.getId() } )}}">Modifier</a>
+          - <a href="{{ path('remove_loisirs', {'id': loisirs.getId() } )}}">Supprimer</a>
+          - <a href="{{ path('create_loisirs', {'id': loisirs.getId() } )}}">Ajouter</a></div></p>
+          {% endfor %}
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
+        <div class="my-auto">
+          <h2 class="mb-5">Contact</h2>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Adresse Mail" aria-label="Mail" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">With textarea</span>
+              </div>
+              <textarea class="form-control" placeholder="Votre Message" aria-label="With textarea"></textarea>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+              </div>
+              <button type="button" class="btn btn-secondary btn-lg">Envoyer</button>
+              </div>
+          </section>
+
+    </div>{% endblock %}

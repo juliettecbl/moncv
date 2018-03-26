@@ -1,0 +1,64 @@
+[12-Feb-2018 07:39:37 UTC] PHP Fatal error:  Call to undefined method AppBundle\Entity\Formation::setLieu() in /home/ubuntu/workspace/cours/src/AppBundle/Controller/DefaultController.php on line 33
+[12-Feb-2018 07:39:37 UTC] PHP Stack trace:
+[12-Feb-2018 07:39:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/web/app_dev.php:0
+[12-Feb-2018 07:39:37 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/cours/web/app_dev.php:29
+[12-Feb-2018 07:39:37 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:202
+[12-Feb-2018 07:39:37 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4282
+[12-Feb-2018 07:39:37 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327}() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327
+[12-Feb-2018 07:39:37 UTC] PHP   6. AppBundle\Controller\DefaultController->insertAction() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327
+[12-Feb-2018 07:40:12 UTC] PHP Fatal error:  Call to undefined method AppBundle\Entity\Formation::setLieu() in /home/ubuntu/workspace/cours/src/AppBundle/Controller/DefaultController.php on line 33
+[12-Feb-2018 07:40:12 UTC] PHP Stack trace:
+[12-Feb-2018 07:40:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/web/app_dev.php:0
+[12-Feb-2018 07:40:12 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/cours/web/app_dev.php:29
+[12-Feb-2018 07:40:12 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:202
+[12-Feb-2018 07:40:12 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4282
+[12-Feb-2018 07:40:12 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327}() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327
+[12-Feb-2018 07:40:12 UTC] PHP   6. AppBundle\Controller\DefaultController->insertAction() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327
+[12-Feb-2018 07:40:35 UTC] PHP Fatal error:  Call to undefined method AppBundle\Entity\Formation::setLieu() in /home/ubuntu/workspace/cours/src/AppBundle/Controller/DefaultController.php on line 33
+[12-Feb-2018 07:40:35 UTC] PHP Stack trace:
+[12-Feb-2018 07:40:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/web/app_dev.php:0
+[12-Feb-2018 07:40:35 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/cours/web/app_dev.php:29
+[12-Feb-2018 07:40:35 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:202
+[12-Feb-2018 07:40:35 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4282
+[12-Feb-2018 07:40:35 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327}() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327
+[12-Feb-2018 07:40:35 UTC] PHP   6. AppBundle\Controller\DefaultController->insertAction() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327
+[12-Feb-2018 07:41:12 UTC] PHP Fatal error:  Call to undefined method AppBundle\Entity\Formation::setLieu() in /home/ubuntu/workspace/cours/src/AppBundle/Controller/DefaultController.php on line 33
+[12-Feb-2018 07:41:12 UTC] PHP Stack trace:
+[12-Feb-2018 07:41:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/web/app_dev.php:0
+[12-Feb-2018 07:41:12 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/cours/web/app_dev.php:29
+[12-Feb-2018 07:41:12 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:202
+[12-Feb-2018 07:41:12 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4282
+[12-Feb-2018 07:41:12 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327}() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327
+[12-Feb-2018 07:41:12 UTC] PHP   6. AppBundle\Controller\DefaultController->insertAction() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327
+[12-Feb-2018 07:42:37 UTC] PHP Fatal error:  Call to undefined method AppBundle\Entity\Formation::setLieu() in /home/ubuntu/workspace/cours/src/AppBundle/Controller/DefaultController.php on line 33
+[12-Feb-2018 07:42:37 UTC] PHP Stack trace:
+[12-Feb-2018 07:42:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/web/app_dev.php:0
+[12-Feb-2018 07:42:37 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/cours/web/app_dev.php:29
+[12-Feb-2018 07:42:37 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:202
+[12-Feb-2018 07:42:37 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4282
+[12-Feb-2018 07:42:37 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327}() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327
+[12-Feb-2018 07:42:37 UTC] PHP   6. AppBundle\Controller\DefaultController->insertAction() /home/ubuntu/workspace/cours/var/cache/dev/classes.php:4327
+[12-Feb-2018 07:56:33 UTC] PHP Warning:  include(/home/ubuntu/workspace/cours/var/cache/dev/ContainerLbd5t2c/appDevDebugProjectContainer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cours/var/cache/dev/appDevDebugProjectContainer.php on line 7
+[12-Feb-2018 07:56:33 UTC] PHP Stack trace:
+[12-Feb-2018 07:56:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/web/app_dev.php:0
+[12-Feb-2018 07:56:33 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/cours/web/app_dev.php:29
+[12-Feb-2018 07:56:33 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:197
+[12-Feb-2018 07:56:33 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeContainer() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:137
+[12-Feb-2018 07:56:33 UTC] PHP   5. include() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:636
+[12-Feb-2018 07:56:33 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/cours/var/cache/dev/ContainerLbd5t2c/appDevDebugProjectContainer.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cours/var/cache/dev/appDevDebugProjectContainer.php on line 7
+[12-Feb-2018 07:56:33 UTC] PHP Stack trace:
+[12-Feb-2018 07:56:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/web/app_dev.php:0
+[12-Feb-2018 07:56:33 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/cours/web/app_dev.php:29
+[12-Feb-2018 07:56:33 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:197
+[12-Feb-2018 07:56:33 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeContainer() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:137
+[12-Feb-2018 07:56:33 UTC] PHP   5. include() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:636
+[26-Mar-2018 06:55:39 UTC] PHP Warning:  Uncaught Symfony\Component\Debug\Exception\ContextErrorException: Warning: require(/home/ubuntu/workspace/cours/var/cache/dev/ContainerEodss1g/getCacheWarmerService.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cours/var/cache/dev/ContainerEodss1g/appDevDebugProjectContainer.php:1127
+Stack trace:
+#0 /home/ubuntu/workspace/cours/var/cache/dev/ContainerEodss1g/appDevDebugProjectContainer.php(1127): require()
+#1 /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php(297): ContainerEodss1g\appDevDebugProjectContainer->load('/home/ubuntu/wo...')
+#2 /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(673): Symfony\Component\DependencyInjection\Container->get('cache_warmer')
+#3 /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(137): Symfony\Component\HttpKernel\Kernel->initializeContainer()
+#4 /home/ubuntu/workspace/cours/vendor/symfony/symf in /home/ubuntu/workspace/cours/var/cache/dev/ContainerEodss1g/appDevDebugProjectContainer.php on line 1127
+[26-Mar-2018 06:55:39 UTC] PHP Fatal error:  ContainerEodss1g\appDevDebugProjectContainer::load(): Failed opening required '/home/ubuntu/workspace/cours/var/cache/dev/ContainerEodss1g/getCacheWarmerService.php' (include_path='.:/usr/share/php') in /home/ubuntu/workspace/cours/var/cache/dev/ContainerEodss1g/appDevDebugProjectContainer.php on line 1127
+[26-Mar-2018 06:55:50 UTC] PHP Warning:  include(/home/ubuntu/workspace/cours/var/cache/dev/ContainerEodss1g/appDevDebugProjectContainer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cours/var/cache/dev/appDevDebugProjectContainer.php on line 7
+[26-Mar-2018 06:55:50 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/cours/var/cache/dev/ContainerEodss1g/appDevDebugProjectContainer.php' for inclusion (include_path='.:/usr/share/php') in /home/ubuntu/workspace/cours/var/cache/dev/appDevDebugProjectContainer.php on line 7

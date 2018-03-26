@@ -1,0 +1,7 @@
+<html>
+    <body>
+        <h3>Edition d'un loisir</h3>
+        {{ form_start(form, {'action': path('validate_edit_loisirs', {'id': entity.getId()}) }) }}
+        {{ form(form) }}
+    </body>
+</html>

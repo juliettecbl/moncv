@@ -1,0 +1,62 @@
+[05-Feb-2018 15:46:58 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require(/home/ubuntu/workspace/cours/var/cache/dev/ContainerOcs25vy/getCacheWarmerService.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/cours/var/cache/dev/ContainerOcs25vy/appDevDebugProjectContainer.php:584
+Stack trace:
+#0 /home/ubuntu/workspace/cours/var/cache/dev/ContainerOcs25vy/appDevDebugProjectContainer.php(584): ContainerOcs25vy\appDevDebugProjectContainer::load()
+#1 /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php(297): ContainerOcs25vy\appDevDebugProjectContainer->load('/home/ubuntu/wo...')
+#2 /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(673): Symfony\Component\DependencyInjection\Container->get('cache_warmer')
+#3 /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(137): Symfony\Component\HttpKernel\Kernel->initia in /home/ubuntu/workspace/cours/var/cache/dev/ContainerOcs25vy/appDevDebugProjectContainer.php on line 584
+[05-Feb-2018 15:46:58 UTC] PHP Stack trace:
+[05-Feb-2018 15:46:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/bin/console:0
+[05-Feb-2018 15:46:58 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/cours/bin/console:27
+[05-Feb-2018 15:46:58 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:148
+[05-Feb-2018 15:46:58 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:63
+[05-Feb-2018 15:46:58 UTC] PHP   5. Symfony\Component\HttpKernel\Kernel->initializeContainer() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:137
+[05-Feb-2018 15:46:58 UTC] PHP   6. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:673
+[05-Feb-2018 15:46:58 UTC] PHP   7. ContainerOcs25vy\appDevDebugProjectContainer->load() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php:297
+[05-Feb-2018 15:46:58 UTC] PHP Fatal error:  ContainerOcs25vy\appDevDebugProjectContainer::load(): Failed opening required '/home/ubuntu/workspace/cours/var/cache/dev/ContainerOcs25vy/getCacheWarmerService.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cours/var/cache/dev/ContainerOcs25vy/appDevDebugProjectContainer.php on line 584
+[05-Feb-2018 15:46:58 UTC] PHP Stack trace:
+[05-Feb-2018 15:46:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/bin/console:0
+[05-Feb-2018 15:46:58 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/cours/bin/console:27
+[05-Feb-2018 15:46:58 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:148
+[05-Feb-2018 15:46:58 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:63
+[05-Feb-2018 15:46:58 UTC] PHP   5. Symfony\Component\HttpKernel\Kernel->initializeContainer() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:137
+[05-Feb-2018 15:46:58 UTC] PHP   6. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:673
+[05-Feb-2018 15:46:58 UTC] PHP   7. ContainerOcs25vy\appDevDebugProjectContainer->load() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php:297
+[05-Feb-2018 15:47:39 UTC] PHP Warning:  include(/home/ubuntu/workspace/cours/var/cache/dev/ContainerOcs25vy/appDevDebugProjectContainer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cours/var/cache/dev/appDevDebugProjectContainer.php on line 7
+[05-Feb-2018 15:47:39 UTC] PHP Stack trace:
+[05-Feb-2018 15:47:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/bin/console:0
+[05-Feb-2018 15:47:39 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/cours/bin/console:27
+[05-Feb-2018 15:47:39 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:148
+[05-Feb-2018 15:47:39 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:63
+[05-Feb-2018 15:47:39 UTC] PHP   5. Symfony\Component\HttpKernel\Kernel->initializeContainer() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:137
+[05-Feb-2018 15:47:39 UTC] PHP   6. include() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:636
+[05-Feb-2018 15:47:39 UTC] PHP Warning:  include(): Failed opening '/home/ubuntu/workspace/cours/var/cache/dev/ContainerOcs25vy/appDevDebugProjectContainer.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cours/var/cache/dev/appDevDebugProjectContainer.php on line 7
+[05-Feb-2018 15:47:39 UTC] PHP Stack trace:
+[05-Feb-2018 15:47:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/bin/console:0
+[05-Feb-2018 15:47:39 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/cours/bin/console:27
+[05-Feb-2018 15:47:39 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:148
+[05-Feb-2018 15:47:39 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:63
+[05-Feb-2018 15:47:39 UTC] PHP   5. Symfony\Component\HttpKernel\Kernel->initializeContainer() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:137
+[05-Feb-2018 15:47:39 UTC] PHP   6. include() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:636
+[12-Feb-2018 07:53:23 UTC] PHP Warning:  Uncaught exception 'Symfony\Component\Debug\Exception\ContextErrorException' with message 'Warning: require(/home/ubuntu/workspace/cours/var/cache/dev/ContainerLbd5t2c/getCacheWarmerService.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/cours/var/cache/dev/ContainerLbd5t2c/appDevDebugProjectContainer.php:584
+Stack trace:
+#0 /home/ubuntu/workspace/cours/var/cache/dev/ContainerLbd5t2c/appDevDebugProjectContainer.php(584): ContainerLbd5t2c\appDevDebugProjectContainer::load()
+#1 /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php(297): ContainerLbd5t2c\appDevDebugProjectContainer->load('/home/ubuntu/wo...')
+#2 /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(673): Symfony\Component\DependencyInjection\Container->get('cache_warmer')
+#3 /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(137): Symfony\Component\HttpKernel\Kernel->initia in /home/ubuntu/workspace/cours/var/cache/dev/ContainerLbd5t2c/appDevDebugProjectContainer.php on line 584
+[12-Feb-2018 07:53:23 UTC] PHP Stack trace:
+[12-Feb-2018 07:53:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/bin/console:0
+[12-Feb-2018 07:53:23 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/cours/bin/console:27
+[12-Feb-2018 07:53:23 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:148
+[12-Feb-2018 07:53:23 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:63
+[12-Feb-2018 07:53:23 UTC] PHP   5. Symfony\Component\HttpKernel\Kernel->initializeContainer() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:137
+[12-Feb-2018 07:53:23 UTC] PHP   6. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:673
+[12-Feb-2018 07:53:23 UTC] PHP   7. ContainerLbd5t2c\appDevDebugProjectContainer->load() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php:297
+[12-Feb-2018 07:53:23 UTC] PHP Fatal error:  ContainerLbd5t2c\appDevDebugProjectContainer::load(): Failed opening required '/home/ubuntu/workspace/cours/var/cache/dev/ContainerLbd5t2c/getCacheWarmerService.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cours/var/cache/dev/ContainerLbd5t2c/appDevDebugProjectContainer.php on line 584
+[12-Feb-2018 07:53:23 UTC] PHP Stack trace:
+[12-Feb-2018 07:53:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cours/bin/console:0
+[12-Feb-2018 07:53:23 UTC] PHP   2. Symfony\Component\Console\Application->run() /home/ubuntu/workspace/cours/bin/console:27
+[12-Feb-2018 07:53:23 UTC] PHP   3. Symfony\Bundle\FrameworkBundle\Console\Application->doRun() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php:148
+[12-Feb-2018 07:53:23 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Console/Application.php:63
+[12-Feb-2018 07:53:23 UTC] PHP   5. Symfony\Component\HttpKernel\Kernel->initializeContainer() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:137
+[12-Feb-2018 07:53:23 UTC] PHP   6. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:673
+[12-Feb-2018 07:53:23 UTC] PHP   7. ContainerLbd5t2c\appDevDebugProjectContainer->load() /home/ubuntu/workspace/cours/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php:297

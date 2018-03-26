@@ -1,0 +1,7 @@
+<html>
+    <body>
+        <h3>Edition d'une competence</h3>
+        {{ form_start(form, {'action': path('validate_edit_competences', {'id': entity.getId()}) }) }}
+        {{ form(form) }}
+    </body>
+</html>
