@@ -10,77 +10,78 @@ use ApiPlatform\Core\Annotation\ApiResource;
  * @ORM\Table(name="formation")
  * @ApiResource
  */
-class Formation {
+class Formation
+{
     
-    /** 
+    /**
      * @ORM\Id
      * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue 
+     * @ORM\GeneratedValue
      **/
     private $id;
-    /** 
+    /**
      * @ORM\Column(type="string")
      **/
     private $name;
-    /** 
+    /**
      * @ORM\Column(type="date")
      **/
     private $dateDebut;
-    /** 
+    /**
      * @ORM\Column(type="date")
      **/
     private $dateFin;
-    /** 
+    /**
      * @ORM\Column(type="string")
      **/
     private $lieu;
 
-    function getId()
+    public function getId()
     {
         return $this->id;
     }
 
-    function getName()
+    public function getName()
     {
         return $this->name;
     }
 
-    function getDateDebut()
+    public function getDateDebut()
     {
         return $this->dateDebut;
     }
 
-    function getDateFin()
+    public function getDateFin()
     {
         return $this->dateFin;
     }
 
-    function getLieu()
+    public function getLieu()
     {
         return $this->lieu;
     }
 
-    function setId($id)
+    public function setId($id)
     {
         $this->id = $id;
     }
 
-    function setName($name)
+    public function setName($name)
     {
         $this->name = $name;
     }
 
-    function setDateDebut($dateDebut)
+    public function setDateDebut($dateDebut)
     {
         $this->dateDebut = $dateDebut;
     }
 
-    function setDateFin($dateFin)
+    public function setDateFin($dateFin)
     {
         $this->dateFin = $dateFin;
     }
 
-    function setLieu($lieu)
+    public function setLieu($lieu)
     {
         $this->lieu = $lieu;
     }

@@ -1,5 +1,6 @@
 <?php
 namespace AppBundle\Controller;
+
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -39,7 +40,7 @@ class LoisirsController extends Controller
     {
         $loisirs = new Loisirs();
         $form = $this->createForm(LoisirsType::class, $loisirs);
-        $form->handleRequest($request); 
+        $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) {
             $eManager = $this->getDoctrine()->getManager();
@@ -81,7 +82,7 @@ class LoisirsController extends Controller
         $eManager = $this->getDoctrine()->getManager();
         $loisirs = $eManager->getRepository("AppBundle:Loisirs")->FindOneBy(["id" => $id]);
         $form = $this->createForm(LoisirsType::class, $loisirs);
-        $form->handleRequest($request); 
+        $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $eManager->persist($loisirs);
             $eManager->flush();
@@ -99,8 +100,8 @@ class LoisirsController extends Controller
     {
         $eManager = $this->getDoctrine()->getManager();
         $loisirs = $eManager->getRepository("AppBundle:Loisirs")->FindOneBy(["id" => $id]);
-            $eManager->remove($loisirs);
-            $eManager->flush();
-            return $this->redirectToRoute('homepage');
+        $eManager->remove($loisirs);
+        $eManager->flush();
+        return $this->redirectToRoute('homepage');
     }
 }

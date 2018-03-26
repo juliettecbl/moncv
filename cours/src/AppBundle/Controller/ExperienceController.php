@@ -1,5 +1,6 @@
 <?php
 namespace AppBundle\Controller;
+
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -39,7 +40,7 @@ class ExperienceController extends Controller
     {
         $experience = new Experience();
         $form = $this->createForm(ExperienceType::class, $experience);
-        $form->handleRequest($request); 
+        $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) {
             $eManager = $this->getDoctrine()->getManager();
@@ -81,7 +82,7 @@ class ExperienceController extends Controller
         $eManager = $this->getDoctrine()->getManager();
         $experience = $eManager->getRepository("AppBundle:Experience")->FindOneBy(["id" => $id]);
         $form = $this->createForm(ExperienceType::class, $experience);
-        $form->handleRequest($request); 
+        $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $eManager->persist($experience);
             $eManager->flush();
@@ -100,8 +101,8 @@ class ExperienceController extends Controller
     {
         $eManager = $this->getDoctrine()->getManager();
         $experience = $eManager->getRepository("AppBundle:Experience")->FindOneBy(["id" => $id]);
-            $eManager->remove($experience);
-            $eManager->flush();
-            return $this->redirectToRoute('homepage');
+        $eManager->remove($experience);
+        $eManager->flush();
+        return $this->redirectToRoute('homepage');
     }
 }

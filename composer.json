@@ -1,0 +1,8 @@
+{
+    "require-dev": {
+        "escapestudios/symfony2-coding-standard": "3.x-dev"
+    },
+    "require": {
+        "squizlabs/php_codesniffer": "*"
+    }
+}

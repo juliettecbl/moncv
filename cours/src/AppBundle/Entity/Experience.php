@@ -1,5 +1,6 @@
 <?php
 namespace AppBundle\Entity;
+
 use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation\ApiResource;
 
@@ -8,91 +9,92 @@ use ApiPlatform\Core\Annotation\ApiResource;
  * @ORM\Table(name="experience")
  * @ApiResource
  */
-class Experience {
+class Experience
+{
     
-    /** 
+    /**
      * @ORM\Id
      * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue 
+     * @ORM\GeneratedValue
      **/
     private $id;
-    /** 
+    /**
      * @ORM\Column(type="string")
      **/
     private $name;
-    /** 
+    /**
      * @ORM\Column(type="string")
      **/
     private $desc;
-    /** 
+    /**
      * @ORM\Column(type="date")
      **/
     private $dateDebut;
-    /** 
+    /**
      * @ORM\Column(type="date")
      **/
     private $dateFin;
-    /** 
+    /**
      * @ORM\Column(type="string")
      **/
     private $lieu;
     
-        function getId()
+    public function getId()
     {
         return $this->id;
     }
 
-    function getName()
+    public function getName()
     {
         return $this->name;
     }
 
-    function getDateDebut()
+    public function getDateDebut()
     {
         return $this->dateDebut;
     }
 
-    function getDateFin()
+    public function getDateFin()
     {
         return $this->dateFin;
     }
 
-    function getLieu()
+    public function getLieu()
     {
         return $this->lieu;
     }
 
-    function getDesc()
+    public function getDesc()
     {
         return $this->desc;
     }
 
-    function setId($id)
+    public function setId($id)
     {
         $this->id = $id;
     }
 
-    function setName($name)
+    public function setName($name)
     {
         $this->name = $name;
     }
 
-    function setDateDebut($dateDebut)
+    public function setDateDebut($dateDebut)
     {
         $this->dateDebut = $dateDebut;
     }
 
-    function setDateFin($dateFin)
+    public function setDateFin($dateFin)
     {
         $this->dateFin = $dateFin;
     }
 
-    function setLieu($lieu)
+    public function setLieu($lieu)
     {
         $this->lieu = $lieu;
     }
     
-        function setDesc($desc)
+    public function setDesc($desc)
     {
         $this->desc = $desc;
     }

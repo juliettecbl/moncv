@@ -1,5 +1,6 @@
 <?php
 namespace AppBundle\Controller;
+
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -39,7 +40,7 @@ class CompetencesController extends Controller
     {
         $competences = new Competences();
         $form = $this->createForm(CompetencesType::class, $competences);
-        $form->handleRequest($request); 
+        $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) {
             $eManager = $this->getDoctrine()->getManager();
@@ -81,7 +82,7 @@ class CompetencesController extends Controller
         $eManager = $this->getDoctrine()->getManager();
         $competences = $eManager->getRepository("AppBundle:Competences")->FindOneBy(["id" => $id]);
         $form = $this->createForm(CompetencesType::class, $competences);
-        $form->handleRequest($request); 
+        $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $eManager->persist($competences);
             $eManager->flush();
@@ -100,8 +101,8 @@ class CompetencesController extends Controller
     {
         $eManager = $this->getDoctrine()->getManager();
         $competences = $eManager->getRepository("AppBundle:Competences")->FindOneBy(["id" => $id]);
-            $eManager->remove($competences);
-            $eManager->flush();
-            return $this->redirectToRoute('homepage');
+        $eManager->remove($competences);
+        $eManager->flush();
+        return $this->redirectToRoute('homepage');
     }
 }

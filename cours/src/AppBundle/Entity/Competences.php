@@ -13,7 +13,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
 
 class Competences
 {
-       /**
+    /**
      * @var int
      *
      * @ORM\Column(name="id", type="integer")

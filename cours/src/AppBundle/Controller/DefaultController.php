@@ -39,7 +39,7 @@ class DefaultController extends Controller
     }
     
     
-        /**
+    /**
      * @Route("/create/formation", name="create_formation")
      * @Template()
      */
@@ -47,8 +47,8 @@ class DefaultController extends Controller
     {
         $form = new Formation();
         $form->setName("Ma formation");
-        $form->setDateDebut(New \DateTime());
-        $form->setDateFin(New \DateTime());
+        $form->setDateDebut(new \DateTime());
+        $form->setDateFin(new \DateTime());
         $form->setLieu("Grenoble, France");
         
         $eManager = $this->getDoctrine()->getManager();

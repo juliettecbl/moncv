@@ -1,5 +1,6 @@
 <?php
 namespace AppBundle\Controller;
+
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -39,7 +40,7 @@ class FormationController extends Controller
     {
         $formation = new Formation();
         $form = $this->createForm(FormationType::class, $formation);
-        $form->handleRequest($request); 
+        $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) {
             $eManager = $this->getDoctrine()->getManager();
@@ -81,7 +82,7 @@ class FormationController extends Controller
         $eManager = $this->getDoctrine()->getManager();
         $formation = $eManager->getRepository("AppBundle:Formation")->FindOneBy(["id" => $id]);
         $form = $this->createForm(FormationType::class, $formation);
-        $form->handleRequest($request); 
+        $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $eManager->persist($formation);
             $eManager->flush();
@@ -101,8 +102,8 @@ class FormationController extends Controller
     {
         $eManager = $this->getDoctrine()->getManager();
         $formation = $eManager->getRepository("AppBundle:Formation")->FindOneBy(["id" => $id]);
-            $eManager->remove($formation);
-            $eManager->flush();
-            return $this->redirectToRoute('homepage');
+        $eManager->remove($formation);
+        $eManager->flush();
+        return $this->redirectToRoute('homepage');
     }
 }
