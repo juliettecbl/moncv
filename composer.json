@@ -1,6 +1,7 @@
 {
     "require-dev": {
-        "escapestudios/symfony2-coding-standard": "3.x-dev"
+        "escapestudios/symfony2-coding-standard": "3.x-dev",
+        "codeception/codeception": "^2.4"
     },
     "require": {
         "squizlabs/php_codesniffer": "*"

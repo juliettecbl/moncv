@@ -1,30 +1,22 @@
+Voici mon CV
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+J'ai réussit à :
 
+Voir mon CV à l'aide d'une URL Web.
+Avoir un menu avec des sections : accueil, experiences, formations, compétences, loisirs et contact.
+Avoir mon projet sur Github documenté et publié regulierement par fonctionnalité.
 
-Hi there! Welcome to Cloud9 IDE!
+Integrer le theme responsive.
+Se baser sur le Bundle Doctrine pour gerer la persistnce, et stocker les informations dans la base de donnée.
+Etre CRUD sur toutes les pages.
+Faire un test unitaire et e2e dans mon code.
+Pouvoir editer les éléments si authentifié.
 
-To get you started, we have created a small hello world application.
+Produire une API du CV dispo sur ApiPlatform.
+Avoir mon code documenté et qui respecte le standard Symfony de PHP_CodeSniffer.
 
-1) Open the hello-world.php file
+Mais je n'ai pas réussit à :
 
-2) Follow the run instructions in the file's comments
+Pouvoir contacter par un formulaire de Contact. 
+Traquer les visites.
 
-3) If you want to look at the Apache logs, check out ~/lib/apache2/log
-
-And that's all there is to it! Just have fun. Go ahead and edit the code, 
-or add new files. It's all up to you! 
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide

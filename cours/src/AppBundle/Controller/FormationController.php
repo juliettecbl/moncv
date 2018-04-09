@@ -50,10 +50,13 @@ class FormationController extends Controller
             return $this->redirectToRoute('homepage');
         }
         
-        return $this->redirectToRoute('create_formation', array(
-            'entity' => $formation,
-            'form' => $form->createView(),
-        ));
+        return $this->redirectToRoute(
+            'create_formation', 
+            array(
+                'entity' => $formation,
+                'form' => $form->createView(),
+            )
+        );
     }
     
     /**
